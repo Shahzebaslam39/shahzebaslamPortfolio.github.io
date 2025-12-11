@@ -105,17 +105,16 @@
         
         .platform-card { 
             background: var(--bg-secondary); 
-            padding: 3rem 2rem; /* Increased padding for better vertical balance */
+            padding: 3rem 2rem; 
             border-radius: 16px; 
             border: 1px solid rgba(255,255,255,0.05); 
             text-align: center; 
             transition: var(--transition); 
-            text-decoration: none; 
-            display: flex; /* Use flex to stabilize content alignment */
+            display: flex; 
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100%; /* Ensures equal height in grid */
+            height: 100%; 
         }
         
         .platform-card:hover { 
@@ -137,20 +136,20 @@
             align-items: center; 
             justify-content: center; 
             border: 1px solid rgba(212, 175, 55, 0.2); 
-            box-shadow: inset 0 0 20px rgba(0,0,0,0.2); /* Deep inset shadow for depth */
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.2); 
             transition: var(--transition); 
         }
         
         .platform-card:hover .platform-icon { 
             background: var(--accent-primary); 
             color: #121212; 
-            transform: scale(1.05); /* Subtle scale, no rotation for stability */
+            transform: scale(1.05); 
             box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
             border-color: var(--accent-primary);
         }
         
         .platform-name { font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-light); margin-bottom: 0.8rem; letter-spacing: 0.5px; }
-        .platform-desc { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; max-width: 85%; }
+        .platform-desc { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; max-width: 85%; margin-bottom: 2rem; }
 
         /* --- PROJECTS SECTION --- */
         .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; }
@@ -320,18 +319,24 @@
             <div class="platforms-grid">
                 
                 <!-- GitHub Card -->
-                <a href="https://github.com/Shahzebaslam39" target="_blank" class="platform-card">
+                <div class="platform-card">
                     <div class="platform-icon"><i class="fab fa-github"></i></div>
                     <h3 class="platform-name">GitHub Profile</h3>
                     <p class="platform-desc">Explore my repositories, open-source contributions, and CI/CD workflow configurations.</p>
-                </a>
+                    <a href="https://github.com/Shahzebaslam39" target="_blank" class="btn btn-outline" style="margin-top: auto;">
+                        <i class="fab fa-github"></i> Visit Profile
+                    </a>
+                </div>
 
                 <!-- Docker Card -->
-                <a href="https://app.docker.com/accounts/shahzebaslam" target="_blank" class="platform-card">
+                <div class="platform-card">
                     <div class="platform-icon"><i class="fab fa-docker"></i></div>
                     <h3 class="platform-name">Docker Hub</h3>
                     <p class="platform-desc">Extensive experience building optimized container images and managing registries.</p>
-                </a>
+                    <a href="https://app.docker.com/accounts/shahzebaslam" target="_blank" class="btn btn-outline" style="margin-top: auto;">
+                        <i class="fab fa-docker"></i> Visit Profile
+                    </a>
+                </div>
 
             </div>
         </div>
